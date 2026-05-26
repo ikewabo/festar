@@ -1,0 +1,16 @@
+{
+  "name": "festar-heritage-landing-page",
+  "version": "1.0.0",
+  "description": "Festar Heritage premium home care services landing page.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "homecare",
+    "landing-page",
+    "festar-heritage"
+  ],
+  "author": "Antigravity",
+  "license": "ISC"
+}

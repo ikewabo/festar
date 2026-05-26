@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Festar Heritage LLC - Compassionate home care services in Connecticut, including skilled nursing, companion care, and personal assistance.">
+  <title>Festar Heritage LLC | Help Mom or Dad Stay Safe at Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    
+    <!-- Header & Navigation Wrap -->
+    <header id="main-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#home" class="brand" aria-label="Festar Heritage Home">
+          <div class="brand-icon">
+            <svg class="brand-icon-svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">Festar Heritage</div>
+            <div class="brand-tag">Care. Dignity. Family.</div>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#families">For Families</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="pill-phone" href="tel:2035550198">
+            <svg class="pill-phone-icon" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            (203) 555-0198
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="nav-menu-mobile" id="nav-menu-mobile">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#families">For Families</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+        <a class="pill-phone" href="tel:2035550198" style="margin-top: 10px; display: inline-flex; justify-content: center;">
+          <svg class="pill-phone-icon" viewBox="0 0 24 24" style="fill: currentColor;">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          (203) 555-0198
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1>Help Mom or Dad<br />Stay Safe at Home.</h1>
+          <p>Compassionate in-home care that honors their independence and gives your family peace of mind.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-gold open-modal-btn">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              Schedule a Free Consultation
+            </button>
+            <a class="btn btn-outline" href="#story">
+              <!-- Play icon -->
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              Watch Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Services Overlay mega menu -->
+      <section class="mega-wrap" id="services" aria-label="Services mega menu">
+        <div class="mega-hint" id="explore-instruction">Move your mouse to explore services</div>
+        
+        <div class="service-grid">
+          <!-- Skilled Nursing -->
+          <article class="service-card" data-service="nursing">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M19 10.5V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9.5M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Skilled Nursing</h3>
+              <p>Professional nursing care at home for complex medical needs.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+
+          <!-- Personal Care -->
+          <article class="service-card" data-service="personal">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm-7 9a7 7 0 0 1 14 0" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Personal Care Assistance</h3>
+              <p>Help with daily activities like bathing, dressing, and grooming.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+
+          <!-- Companion Care -->
+          <article class="service-card" data-service="companion">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Companion Care</h3>
+              <p>Friendly companionship and support to brighten each day.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+
+          <!-- Therapy Coordination -->
+          <article class="service-card" data-service="therapy">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M13 2v8h8M3 12h18M3 12L12 3m0 18V12M12 21l9-9" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Therapy Coordination</h3>
+              <p>Coordination with physical, occupational, and speech therapists.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+
+          <!-- Chronic Condition Support -->
+          <article class="service-card" data-service="chronic">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M4.5 10.5C4.5 6 12 3 12 3s7.5 3 7.5 7.5c0 5-7.5 10.5-7.5 10.5s-7.5-5.5-7.5-10.5z" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Chronic Condition Support</h3>
+              <p>Ongoing support for diabetes, heart disease, COPD and more.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+
+          <!-- Care Management -->
+          <article class="service-card" data-service="management">
+            <div class="service-icon">
+              <svg class="service-icon-svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Care Management & Family Support</h3>
+              <p>Care planning, updates, and guidance for the entire family.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- Why Families Choose Festar Heritage -->
+    <section class="photo-benefits" id="families">
+      <div class="benefit-content">
+        <h2 class="section-title">Why Families Choose Festar Heritage</h2>
+        <div class="gold-line"></div>
+        
+        <div class="benefit-grid">
+          <!-- Benefit 1 -->
+          <article class="benefit">
+            <div class="bicon">
+              <svg class="benefit-icon-svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3>Compassionate Care</h3>
+            <p>We treat your loved ones like our own — with kindness and respect.</p>
+          </article>
+
+          <!-- Benefit 2 -->
+          <article class="benefit">
+            <div class="bicon">
+              <svg class="benefit-icon-svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20M12 2a14.5 14.5 0 0 1 0 20M2 12h20" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h3>Culturally Responsive</h3>
+            <p>Care that honors your culture, values, language, and traditions.</p>
+          </article>
+
+          <!-- Benefit 3 -->
+          <article class="benefit">
+            <div class="bicon">
+              <svg class="benefit-icon-svg" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Trusted Caregivers</h3>
+            <p>Our caregivers are carefully screened, trained, and insured.</p>
+          </article>
+
+          <!-- Benefit 4 -->
+          <article class="benefit">
+            <div class="bicon">
+              <svg class="benefit-icon-svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h3>Flexible Scheduling</h3>
+            <p>Care when you need it — from a few hours a day to 24/7 support.</p>
+          </article>
+
+          <!-- Benefit 5 -->
+          <article class="benefit">
+            <div class="bicon">
+              <svg class="benefit-icon-svg" viewBox="0 0 24 24">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Family Communication</h3>
+            <p>We keep families informed with regular updates and open communication.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how" id="about">
+      <div class="how-card">
+        <h2 class="section-title">How It Works</h2>
+        <div class="gold-line"></div>
+        
+        <div class="steps">
+          <!-- Step 1 -->
+          <article class="step">
+            <div class="step-num">1</div>
+            <div class="step-icon">
+              <svg class="step-icon-svg" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <h3>Free Consultation</h3>
+            <p>Call or message us to discuss your loved one’s needs and ask any questions.</p>
+          </article>
+          
+          <div class="dotted"></div>
+          
+          <!-- Step 2 -->
+          <article class="step">
+            <div class="step-num">2</div>
+            <div class="step-icon">
+              <svg class="step-icon-svg" viewBox="0 0 24 24">
+                <path d="M19 20H5V4h14v16zm-7-2h5v-2h-5v2zm0-4h5v-2h-5v2zm0-4h5V8h-5v2zm-4 8h2v-2H8v2zm0-4h2v-2H8v2zm0-4h2V8H8v2zm4-6h-2c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              </svg>
+            </div>
+            <h3>Personalized Care Plan</h3>
+            <p>We create a custom care plan tailored to your loved one’s needs and preferences.</p>
+          </article>
+          
+          <div class="dotted"></div>
+          
+          <!-- Step 3 -->
+          <article class="step">
+            <div class="step-num">3</div>
+            <div class="step-icon">
+              <svg class="step-icon-svg" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9zm9 3c-1.66 0-3 1.34-3 3 0 2 3 5 3 5s3-3 3-5c0-1.66-1.34-3-3-3z"/>
+              </svg>
+            </div>
+            <h3>Care at Home</h3>
+            <p>Our caregivers provide compassionate care in the comfort of home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial" id="story">
+      <div class="quote-box">
+        <div class="quote-mark">“</div>
+        <blockquote id="testimonial-quote">Festar Heritage has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
+        <cite id="testimonial-author">— The Johnson Family</cite>
+        <span id="testimonial-location">Waterbury, CT</span>
+      </div>
+      <div class="family-photo" role="img" aria-label="A smiling multi-generational family together at home"></div>
+    </section>
+
+    <!-- Pre-Footer CTA Band -->
+    <section class="cta-band" id="contact">
+      <div class="cta-inner">
+        <div class="cta-left">
+          <div class="cta-heart">
+            <svg class="cta-heart-svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Ready to Give Your Loved One<br /><span>the Care They Deserve?</span></h2>
+            <p>We’re here to help your family every step of the way.</p>
+          </div>
+        </div>
+        <div class="cta-actions">
+          <button class="btn btn-gold open-modal-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24" style="fill: currentColor;">
+              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/>
+            </svg>
+            Schedule a Free Consultation
+          </button>
+          <a class="cta-phone" href="tel:2035550198">
+            <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: currentColor;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            (203) 555-0198
+          </a>
+        </div>
+        <div class="badge">Proudly<br />Serving<br />Connecticut</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="resources">
+      <div class="footer-inner">
+        <div>
+          <div class="brand">
+            <div class="brand-icon" style="border-radius: 12px; width: 42px; height: 42px;">
+              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div>
+              <div class="brand-name">Festar Heritage</div>
+              <div class="brand-tag" style="font-size: 15px; margin-top: 1px;">Care. Dignity. Family.</div>
+            </div>
+          </div>
+          <p>Providing compassionate, culturally responsive in-home care that helps seniors live safely and comfortably at home.</p>
+          
+          <div class="socials" aria-label="Social links">
+            <a href="#" class="socials-btn" aria-label="Facebook">
+              <svg class="socials-svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            </a>
+            <a href="#" class="socials-btn" aria-label="Instagram">
+              <svg class="socials-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="#" class="socials-btn" aria-label="LinkedIn">
+              <svg class="socials-svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#families">For Families</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Skilled Nursing</a></li>
+            <li><a href="#services">Personal Care Assistance</a></li>
+            <li><a href="#services">Companion Care</a></li>
+            <li><a href="#services">Therapy Coordination</a></li>
+            <li><a href="#services">Chronic Condition Support</a></li>
+            <li><a href="#services">Care Management & Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Us</h4>
+          <ul>
+            <li>100 Grand Street, Suite 203</li>
+            <li>Waterbury, CT 06702</li>
+            <li>(203) 555-0198</li>
+            <li>info@festarheritage.com</li>
+            <li>www.festarheritage.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Festar Heritage LLC. All rights reserved.</div>
+        <div>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service&nbsp;&nbsp; | &nbsp;&nbsp;HIPAA Notice</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Consultation Booking Modal -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">
+        <svg class="modal-close-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <h3 class="modal-title">Schedule a Free Consultation</h3>
+      <p class="modal-subtitle">Leave your details and one of our family care coordinators will get in touch with you shortly.</p>
+      
+      <form id="consultation-form">
+        <div class="form-group">
+          <label class="form-label" for="form-name">Your Name *</label>
+          <input class="form-input" type="text" id="form-name" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="form-phone">Phone Number *</label>
+          <input class="form-input" type="tel" id="form-phone" required placeholder="(203) 555-0100">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="form-email">Email Address</label>
+          <input class="form-input" type="email" id="form-email" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="form-service">Required Service</label>
+          <select class="form-input" id="form-service">
+            <option value="general">Not Sure / General Consultation</option>
+            <option value="nursing">Skilled Nursing</option>
+            <option value="personal">Personal Care Assistance</option>
+            <option value="companion">Companion Care</option>
+            <option value="therapy">Therapy Coordination</option>
+            <option value="chronic">Chronic Condition Support</option>
+            <option value="management">Care Management & Family Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="form-message">How can we help your family?</label>
+          <textarea class="form-input" id="form-message" placeholder="Describe your situation and requirements..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-gold form-submit">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

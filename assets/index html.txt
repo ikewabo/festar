@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festar Heritage LLC | Help Mom or Dad Stay Safe at Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #06243f;
+      --navy-2: #03182c;
+      --gold: #d9a441;
+      --gold-2: #f0c46c;
+      --cream: #f7efe2;
+      --ivory: #fffaf1;
+      --teal: #2b908c;
+      --coral: #d86661;
+      --purple: #8b66b1;
+      --ink: #0a2340;
+      --muted: #667085;
+      --glass: rgba(255,255,255,0.23);
+      --glass-strong: rgba(255,255,255,0.34);
+      --shadow: 0 28px 80px rgba(0, 0, 0, .26);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Manrope, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--navy-2);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; }
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: linear-gradient(180deg, #fff8ed 0%, #f8efe2 45%, #071d33 100%);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 900px;
+      color: white;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(3,18,31,.82) 0%, rgba(3,18,31,.48) 36%, rgba(3,18,31,.34) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,.12) 45%, rgba(0,0,0,.78) 100%),
+        url("sandbox:/mnt/data/ChatGPT%20Image%20May%2026%2C%202026%2C%2011_52_49%20AM.png") center/cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 22% 23%, rgba(217,164,65,.22), transparent 30%),
+        radial-gradient(circle at 78% 17%, rgba(255,255,255,.12), transparent 28%),
+        linear-gradient(180deg, rgba(0,0,0,.03), rgba(2,15,28,.44));
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 84px 84px;
+      opacity: .18;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      pointer-events: none;
+    }
+
+    .navbar {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      width: min(1360px, calc(100% - 64px));
+      margin: 0 auto;
+      padding: 28px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 255px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border: 2px solid var(--gold-2);
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: var(--gold-2);
+      font-size: 25px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.12), 0 10px 30px rgba(217,164,65,.18);
+    }
+
+    .brand-name {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: .82;
+      letter-spacing: -.045em;
+      text-shadow: 0 10px 28px rgba(0,0,0,.3);
+    }
+
+    .brand-tag {
+      color: var(--gold-2);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .01em;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .015em;
+      color: rgba(255,255,255,.92);
+    }
+
+    .nav-links a:first-child {
+      color: white;
+      position: relative;
+    }
+
+    .nav-links a:first-child::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 999px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .pill-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      background: rgba(5, 34, 59, .82);
+      border: 1px solid rgba(255,255,255,.3);
+      font-weight: 800;
+      letter-spacing: .02em;
+      box-shadow: 0 12px 35px rgba(0,0,0,.22);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: 13px;
+      padding: 16px 28px;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .015em;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #e9ba5e, #c78c25);
+      color: white;
+      box-shadow: 0 16px 35px rgba(217,164,65,.28);
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,.08);
+      color: white;
+      border: 1px solid rgba(255,255,255,.48);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: min(1360px, calc(100% - 64px));
+      margin: 0 auto;
+      padding-top: 170px;
+      padding-bottom: 350px;
+    }
+
+    .hero-copy {
+      width: min(660px, 100%);
+      margin-left: 30%;
+      transform: translateX(-4%);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(66px, 7vw, 106px);
+      font-weight: 700;
+      line-height: .86;
+      letter-spacing: -.065em;
+      text-shadow: 0 20px 52px rgba(0,0,0,.55);
+    }
+
+    .hero p {
+      max-width: 660px;
+      margin: 26px 0 30px;
+      font-size: 21px;
+      line-height: 1.58;
+      font-weight: 500;
+      letter-spacing: -.01em;
+      color: rgba(255,255,255,.94);
+      text-shadow: 0 8px 26px rgba(0,0,0,.38);
+    }
+
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .video-controls {
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      bottom: 315px;
+      transform: translateX(-50%);
+      width: min(1360px, calc(100% - 64px));
+      display: grid;
+      grid-template-columns: auto auto 1fr auto auto auto;
+      align-items: center;
+      gap: 16px;
+      color: white;
+    }
+
+    .control-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,.55);
+      background: rgba(0,0,0,.36);
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      color: var(--gold-2);
+      backdrop-filter: blur(12px);
+    }
+
+    .time { font-weight: 700; }
+    .progress {
+      height: 3px;
+      background: rgba(255,255,255,.42);
+      border-radius: 999px;
+      overflow: visible;
+      position: relative;
+    }
+
+    .progress::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 22%;
+      background: var(--gold);
+      border-radius: inherit;
+    }
+
+    .progress::after {
+      content: "";
+      position: absolute;
+      left: 22%;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: white;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 0 4px rgba(255,255,255,.18);
+    }
+
+    .control-icon {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      opacity: .96;
+      font-size: 22px;
+    }
+
+    .mega-wrap {
+      position: absolute;
+      z-index: 5;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      width: min(1250px, calc(100% - 96px));
+      padding: 32px;
+      border-radius: 32px;
+      background: rgba(255,255,255,.21);
+      border: 1px solid rgba(255,255,255,.55);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.5);
+      backdrop-filter: blur(23px) saturate(150%);
+    }
+
+    .mega-wrap::before {
+      content: "⌄";
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      width: 92px;
+      height: 44px;
+      transform: translateX(-50%);
+      border-radius: 999px 999px 0 0;
+      background: rgba(255,255,255,.25);
+      border: 1px solid rgba(255,255,255,.55);
+      border-bottom: 0;
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      color: white;
+      backdrop-filter: blur(18px);
+      text-shadow: 0 4px 18px rgba(0,0,0,.3);
+    }
+
+    .mega-hint {
+      text-align: center;
+      color: rgba(255,255,255,.96);
+      font-weight: 800;
+      font-size: 17px;
+      letter-spacing: .01em;
+      margin: -4px 0 22px;
+      text-shadow: 0 4px 20px rgba(0,0,0,.36);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      min-height: 142px;
+      display: grid;
+      grid-template-columns: 72px 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 22px 24px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.27);
+      border: 1px solid rgba(255,255,255,.72);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.58), 0 18px 40px rgba(0,0,0,.13);
+      backdrop-filter: blur(18px) saturate(145%);
+      color: #0b2542;
+    }
+
+    .service-card h3 {
+      margin: 0 0 8px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: .98;
+      letter-spacing: -.035em;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: #1f354e;
+      line-height: 1.48;
+      font-size: 14.5px;
+      font-weight: 650;
+      letter-spacing: -.005em;
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 30px;
+      border: 2px solid rgba(255,255,255,.65);
+      box-shadow: 0 14px 30px rgba(0,0,0,.18);
+    }
+
+    .service-card:nth-child(1) .service-icon { background: #143e68; }
+    .service-card:nth-child(2) .service-icon { background: #238b87; }
+    .service-card:nth-child(3) .service-icon { background: #d5a034; }
+    .service-card:nth-child(4) .service-icon { background: #8c61b4; }
+    .service-card:nth-child(5) .service-icon { background: #db5c58; }
+    .service-card:nth-child(6) .service-icon { background: #238b9d; }
+
+    .arrow { color: white; font-size: 22px; text-shadow: 0 4px 10px rgba(0,0,0,.28); }
+
+    .photo-benefits {
+      position: relative;
+      display: grid;
+      grid-template-columns: 36% 64%;
+      min-height: 320px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(2,20,36,.1) 0%, rgba(2,20,36,.55) 36%, rgba(2,20,36,.94) 100%),
+        url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=2200&q=90") center/cover no-repeat;
+    }
+
+    .photo-benefits::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(2,18,34,.04), rgba(2,18,34,.12));
+      pointer-events: none;
+    }
+
+    .benefit-content {
+      position: relative;
+      z-index: 2;
+      grid-column: 2;
+      padding: 54px 54px 44px 32px;
+      color: white;
+    }
+
+    .section-title {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(46px, 4.2vw, 64px);
+      font-weight: 700;
+      line-height: .92;
+      letter-spacing: -.055em;
+      margin: 0;
+      text-align: center;
+    }
+
+    .gold-line {
+      width: 130px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 18px auto 42px;
+      border-radius: 99px;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+    }
+
+    .benefit {
+      padding: 0 24px;
+      text-align: center;
+      border-right: 1px solid rgba(217,164,65,.42);
+    }
+    .benefit:last-child { border-right: 0; }
+    .benefit .bicon { color: var(--gold-2); font-size: 46px; margin-bottom: 12px; }
+    .benefit h3 { margin: 0 0 10px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 22px; font-weight: 700; line-height: 1; letter-spacing: -.035em; }
+    .benefit p { margin: 0; font-size: 13.5px; line-height: 1.6; color: rgba(255,255,255,.86); font-weight: 600; letter-spacing: -.005em; }
+
+    .how {
+      padding: 58px 24px 28px;
+      background: linear-gradient(180deg, #f5ecdF, #fff8ee 70%, #f8efe3);
+    }
+
+    .how-card {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      padding: 40px 60px 58px;
+      border-radius: 28px;
+      background: rgba(255,250,241,.94);
+      box-shadow: 0 26px 70px rgba(21,34,48,.16);
+      border: 1px solid rgba(217,164,65,.16);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items: start;
+      gap: 38px;
+      margin-top: 8px;
+    }
+
+    .step { text-align: center; position: relative; }
+    .step-num {
+      position: absolute;
+      left: 50%;
+      top: -14px;
+      transform: translateX(-58px);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: white;
+      font-weight: 900;
+    }
+
+    .step-icon {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #f0eadf;
+      color: var(--navy);
+      font-size: 42px;
+      box-shadow: inset 0 1px 0 white;
+    }
+
+    .step h3 { margin: 0 0 9px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 27px; font-weight: 700; line-height: .98; letter-spacing: -.04em; }
+    .step p { margin: 0 auto; max-width: 235px; font-size: 14px; line-height: 1.55; color: #30435a; font-weight: 600; }
+    .dotted {
+      height: 2px;
+      width: 140px;
+      margin-top: 50px;
+      border-top: 3px dotted var(--navy);
+      position: relative;
+    }
+    .dotted::after {
+      content: "›";
+      position: absolute;
+      right: -10px;
+      top: -19px;
+      color: var(--navy);
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .testimonial {
+      position: relative;
+      display: grid;
+      grid-template-columns: 45% 55%;
+      width: min(1240px, calc(100% - 72px));
+      margin: -10px auto 0;
+      border-radius: 22px 22px 0 0;
+      overflow: hidden;
+      box-shadow: 0 22px 80px rgba(0,0,0,.2);
+      z-index: 2;
+    }
+
+    .quote-box {
+      min-height: 245px;
+      padding: 42px 46px;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.48)),
+        url("https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=90") center/cover no-repeat;
+    }
+
+    .quote-mark { color: var(--gold); font-size: 74px; line-height: .5; font-family: Georgia, serif; }
+    .quote-box blockquote { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 32px; font-weight: 600; line-height: 1.18; letter-spacing: -.035em; }
+    .quote-box cite { display: block; margin-top: 22px; color: var(--gold-2); font-weight: 800; font-style: normal; }
+    .quote-box span { display: block; margin-top: 4px; font-size: 13px; color: rgba(255,255,255,.82); font-weight: 700; }
+
+    .family-photo {
+      min-height: 245px;
+      background: url("https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1400&q=90") center/cover no-repeat;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, #062540, #082f50 44%, #03182c 100%);
+      color: white;
+      padding: 44px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .cta-inner {
+      width: min(1280px, calc(100% - 72px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .cta-left {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .cta-heart { font-size: 78px; color: var(--gold); line-height: 1; }
+    .cta-band h2 { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 52px; font-weight: 700; line-height: .9; letter-spacing: -.055em; }
+    .cta-band h2 span { color: var(--gold-2); }
+    .cta-band p { margin: 10px 0 0; color: rgba(255,255,255,.86); font-weight: 600; }
+    .cta-actions { display: grid; gap: 15px; }
+    .cta-phone { font-size: 27px; font-weight: 900; color: white; }
+    .badge {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      border: 2px dotted var(--gold-2);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: white;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 1.25;
+      box-shadow: inset 0 0 0 8px rgba(217,164,65,.08);
+    }
+
+    .footer {
+      background: #04192d;
+      color: white;
+      padding: 42px 0 20px;
+    }
+
+    .footer-inner {
+      width: min(1280px, calc(100% - 72px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr .8fr 1fr 1.1fr;
+      gap: 44px;
+    }
+
+    .footer .brand { margin-bottom: 14px; }
+    .footer .brand-icon { width: 42px; height: 42px; font-size: 23px; }
+    .footer .brand-name { font-size: 31px; }
+    .footer p { color: rgba(255,255,255,.74); line-height: 1.55; margin: 0 0 18px; }
+    .socials { display: flex; gap: 12px; }
+    .socials span {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.12);
+      color: white;
+      font-weight: 900;
+    }
+
+    .footer h4 { margin: 0 0 16px; color: white; font-family: "Cormorant Garamond", Georgia, serif; font-size: 25px; line-height: 1; letter-spacing: -.035em; }
+    .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .footer li { color: rgba(255,255,255,.74); font-size: 14.5px; line-height: 1.35; font-weight: 600; }
+    .footer-bottom {
+      width: min(1280px, calc(100% - 72px));
+      margin: 34px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1100px) {
+      .nav-links { display: none; }
+      .hero-copy { margin-left: 0; transform: none; }
+      .hero-content { padding-top: 120px; }
+      .service-grid { grid-template-columns: 1fr 1fr; }
+      .photo-benefits { grid-template-columns: 1fr; }
+      .benefit-content { grid-column: 1; padding: 48px 28px; background: rgba(3,24,43,.76); }
+      .benefit-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .benefit { border: 0; }
+      .steps { grid-template-columns: 1fr; }
+      .dotted { display: none; }
+      .testimonial, .cta-inner, .footer-inner { grid-template-columns: 1fr; }
+      .badge { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .navbar, .hero-content, .video-controls, .mega-wrap, .cta-inner, .footer-inner, .footer-bottom, .testimonial { width: calc(100% - 32px); }
+      .nav-actions { display: none; }
+      .hero { min-height: 1120px; }
+      .hero h1 { font-size: 48px; }
+      .hero-content { padding-bottom: 520px; }
+      .video-controls { bottom: 500px; grid-template-columns: auto auto 1fr; }
+      .video-controls .control-icon:nth-last-child(-n+3) { display: none; }
+      .mega-wrap { padding: 22px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { grid-template-columns: 58px 1fr auto; padding: 18px; }
+      .service-icon { width: 54px; height: 54px; font-size: 24px; }
+      .benefit-grid { grid-template-columns: 1fr; }
+      .how-card { padding: 34px 22px; }
+      .cta-left { align-items: flex-start; }
+      .cta-heart { font-size: 54px; }
+      .cta-band h2 { font-size: 31px; }
+      .footer-bottom { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" id="home">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#home" class="brand" aria-label="Festar Heritage Home">
+          <div class="brand-icon">♡</div>
+          <div>
+            <div class="brand-name">Festar Heritage</div>
+            <div class="brand-tag">Care. Dignity. Family.</div>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services⌄</a>
+          <a href="#families">For Families⌄</a>
+          <a href="#resources">Resources⌄</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="pill-phone" href="tel:2035550198">☎ (203) 555-0198</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1>Help Mom or Dad<br />Stay Safe at Home.</h1>
+          <p>Compassionate in-home care that honors their independence and gives your family peace of mind.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-gold" href="#contact">♡ Schedule a Free Consultation</a>
+            <a class="btn btn-outline" href="#story">▶ Watch Our Story</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-controls" aria-label="Decorative video controls">
+        <div class="control-circle">Ⅱ</div>
+        <div class="time">0:04 / 0:30</div>
+        <div class="progress"></div>
+        <div class="control-icon">♬</div>
+        <div class="control-icon">⚙</div>
+        <div class="control-icon">⛶</div>
+      </div>
+
+      <section class="mega-wrap" id="services" aria-label="Services mega menu">
+        <div class="mega-hint">Move your mouse to explore services</div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">♩</div>
+            <div>
+              <h3>Skilled Nursing</h3>
+              <p>Professional nursing care at home for complex medical needs.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♙</div>
+            <div>
+              <h3>Personal Care Assistance</h3>
+              <p>Help with daily activities like bathing, dressing, and grooming.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♧</div>
+            <div>
+              <h3>Companion Care</h3>
+              <p>Friendly companionship and support to brighten each day.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♿</div>
+            <div>
+              <h3>Therapy Coordination</h3>
+              <p>Coordination with physical, occupational, and speech therapists.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♡</div>
+            <div>
+              <h3>Chronic Condition Support</h3>
+              <p>Ongoing support for diabetes, heart disease, COPD and more.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♚</div>
+            <div>
+              <h3>Care Management & Family Support</h3>
+              <p>Care planning, updates, and guidance for the entire family.</p>
+            </div>
+            <div class="arrow">→</div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="photo-benefits" id="families">
+      <div class="benefit-content">
+        <h2 class="section-title">Why Families Choose Festar Heritage</h2>
+        <div class="gold-line"></div>
+        <div class="benefit-grid">
+          <article class="benefit">
+            <div class="bicon">♡</div>
+            <h3>Compassionate Care</h3>
+            <p>We treat your loved ones like our own — with kindness and respect.</p>
+          </article>
+          <article class="benefit">
+            <div class="bicon">◎</div>
+            <h3>Culturally Responsive</h3>
+            <p>Care that honors your culture, values, language, and traditions.</p>
+          </article>
+          <article class="benefit">
+            <div class="bicon">♢</div>
+            <h3>Trusted Caregivers</h3>
+            <p>Our caregivers are carefully screened, trained, and insured.</p>
+          </article>
+          <article class="benefit">
+            <div class="bicon">▣</div>
+            <h3>Flexible Scheduling</h3>
+            <p>Care when you need it — from a few hours a day to 24/7 support.</p>
+          </article>
+          <article class="benefit">
+            <div class="bicon">◌</div>
+            <h3>Family Communication</h3>
+            <p>We keep families informed with regular updates and open communication.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="about">
+      <div class="how-card">
+        <h2 class="section-title">How It Works</h2>
+        <div class="gold-line"></div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <div class="step-icon">☎</div>
+            <h3>Free Consultation</h3>
+            <p>Call or message us to discuss your loved one’s needs and ask any questions.</p>
+          </article>
+          <div class="dotted"></div>
+          <article class="step">
+            <div class="step-num">2</div>
+            <div class="step-icon">☷</div>
+            <h3>Personalized Care Plan</h3>
+            <p>We create a custom care plan tailored to your loved one’s needs and preferences.</p>
+          </article>
+          <div class="dotted"></div>
+          <article class="step">
+            <div class="step-num">3</div>
+            <div class="step-icon">⌂</div>
+            <h3>Care at Home</h3>
+            <p>Our caregivers provide compassionate care in the comfort of home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial" id="story">
+      <div class="quote-box">
+        <div class="quote-mark">“</div>
+        <blockquote>Festar Heritage has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
+        <cite>— The Johnson Family</cite>
+        <span>Waterbury, CT</span>
+      </div>
+      <div class="family-photo" role="img" aria-label="A smiling multi-generational family together at home"></div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="cta-inner">
+        <div class="cta-left">
+          <div class="cta-heart">♡</div>
+          <div>
+            <h2>Ready to Give Your Loved One<br /><span>the Care They Deserve?</span></h2>
+            <p>We’re here to help your family every step of the way.</p>
+          </div>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-gold" href="mailto:info@festarheritage.com">▣ Schedule a Free Consultation</a>
+          <a class="cta-phone" href="tel:2035550198">☎ (203) 555-0198</a>
+        </div>
+        <div class="badge">Proudly<br />Serving<br />Connecticut</div>
+      </div>
+    </section>
+
+    <footer class="footer" id="resources">
+      <div class="footer-inner">
+        <div>
+          <div class="brand">
+            <div class="brand-icon">♡</div>
+            <div>
+              <div class="brand-name">Festar Heritage</div>
+              <div class="brand-tag">Care. Dignity. Family.</div>
+            </div>
+          </div>
+          <p>Providing compassionate, culturally responsive in-home care that helps seniors live safely and comfortably at home.</p>
+          <div class="socials" aria-label="Social links"><span>f</span><span>◎</span><span>in</span></div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>For Families</li>
+            <li>Resources</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li>Skilled Nursing</li>
+            <li>Personal Care Assistance</li>
+            <li>Companion Care</li>
+            <li>Therapy Coordination</li>
+            <li>Chronic Condition Support</li>
+            <li>Care Management & Family Support</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Us</h4>
+          <ul>
+            <li>123 Heritage Way, Suite 203</li>
+            <li>Waterbury, CT 06702</li>
+            <li>(203) 555-0198</li>
+            <li>info@festarheritage.com</li>
+            <li>www.festarheritage.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2024 Festar Heritage LLC. All rights reserved.</div>
+        <div>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service&nbsp;&nbsp; | &nbsp;&nbsp;HIPAA Notice</div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
