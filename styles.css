@@ -1143,6 +1143,12 @@ textarea.form-input {
   .navbar, .hero-content, .mega-wrap, .cta-inner, .footer-inner, .footer-bottom, .testimonial { width: calc(100% - 32px); }
   .nav-actions { display: none; }
   
+  .brand { min-width: auto; }
+  .brand-name { font-size: 28px; }
+  .brand-icon { width: 40px; height: 40px; border-radius: 12px; }
+  .brand-icon-svg { width: 18px; height: 18px; }
+  .brand-tag { font-size: 14px; margin-top: 2px; }
+  
   .hero {
     min-height: auto;
     padding-top: 120px;
