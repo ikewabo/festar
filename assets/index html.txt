@@ -888,7 +888,7 @@
           </div>
         </div>
         <div class="cta-actions">
-          <a class="btn btn-gold" href="mailto:info@festarheritage.com">▣ Schedule a Free Consultation</a>
+          <a class="btn btn-gold" href="mailto:info@festarhealth.com">▣ Schedule a Free Consultation</a>
           <a class="cta-phone" href="tel:6894656226">☎ (689) 465-6226</a>
         </div>
         <div class="badge">Proudly<br />Serving<br />Florida</div>
@@ -940,8 +940,8 @@
             <li>2000 Hillcrest Street, Suite 1305</li>
             <li>Orlando, Florida 32803</li>
             <li>(689) 465-6226</li>
-            <li>info@festarheritage.com</li>
-            <li>www.festarheritage.com</li>
+            <li>info@festarhealth.com</li>
+            <li>www.festarhealth.com</li>
           </ul>
         </div>
       </div>
