@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Festar Heritage LLC | Help Mom or Dad Stay Safe at Home</title>
+  <title>Festar Health LLC | Help Mom or Dad Stay Safe at Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -708,10 +708,10 @@
   <main class="page">
     <section class="hero" id="home">
       <nav class="navbar" aria-label="Primary navigation">
-        <a href="#home" class="brand" aria-label="Festar Heritage Home">
+        <a href="#home" class="brand" aria-label="Festar Health Home">
           <div class="brand-icon">♡</div>
           <div>
-            <div class="brand-name">Festar Heritage</div>
+            <div class="brand-name">Festar Health</div>
             <div class="brand-tag">Care. Dignity. Family.</div>
           </div>
         </a>
@@ -807,7 +807,7 @@
 
     <section class="photo-benefits" id="families">
       <div class="benefit-content">
-        <h2 class="section-title">Why Families Choose Festar Heritage</h2>
+        <h2 class="section-title">Why Families Choose Festar Health</h2>
         <div class="gold-line"></div>
         <div class="benefit-grid">
           <article class="benefit">
@@ -871,7 +871,7 @@
     <section class="testimonial" id="story">
       <div class="quote-box">
         <div class="quote-mark">“</div>
-        <blockquote>Festar Heritage has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
+        <blockquote>Festar Health has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
         <cite>— The Johnson Family</cite>
         <span>Orlando, FL</span>
       </div>
@@ -901,7 +901,7 @@
           <div class="brand">
             <div class="brand-icon">♡</div>
             <div>
-              <div class="brand-name">Festar Heritage</div>
+              <div class="brand-name">Festar Health</div>
               <div class="brand-tag">Care. Dignity. Family.</div>
             </div>
           </div>
@@ -936,7 +936,7 @@
         <div>
           <h4>Contact Us</h4>
           <ul>
-            <li>Fester Heritage LLC</li>
+            <li>Festar Health LLC</li>
             <li>2000 Hillcrest Street, Suite 1305</li>
             <li>Orlando, Florida 32803</li>
             <li>(689) 465-6226</li>
@@ -946,7 +946,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div>© 2024 Festar Heritage LLC. All rights reserved.</div>
+        <div>© 2024 Festar Health LLC. All rights reserved.</div>
         <div>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service&nbsp;&nbsp; | &nbsp;&nbsp;HIPAA Notice</div>
       </div>
     </footer>
