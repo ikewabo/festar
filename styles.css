@@ -283,6 +283,10 @@ button { font-family: inherit; }
   background: url("assets/festarHero.gif") center/cover no-repeat;
 }
 
+.hero-video-mobile {
+  display: none;
+}
+
 .hero::before {
   display: none;
 }
@@ -1051,8 +1055,19 @@ textarea.form-input {
   }
   
   .hero {
-    background-image: url("assets/festarHeroMobile.gif");
+    background-image: none;
     background-position: left center;
+  }
+
+  .hero-video-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
   }
 
   .hero-copy {
