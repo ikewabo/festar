@@ -726,7 +726,7 @@
         </div>
 
         <div class="nav-actions">
-          <a class="pill-phone" href="tel:2035550198">☎ (203) 555-0198</a>
+          <a class="pill-phone" href="tel:6894656226">☎ (689) 465-6226</a>
         </div>
       </nav>
 
@@ -873,7 +873,7 @@
         <div class="quote-mark">“</div>
         <blockquote>Festar Heritage has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
         <cite>— The Johnson Family</cite>
-        <span>Waterbury, CT</span>
+        <span>Orlando, FL</span>
       </div>
       <div class="family-photo" role="img" aria-label="A smiling multi-generational family together at home"></div>
     </section>
@@ -889,9 +889,9 @@
         </div>
         <div class="cta-actions">
           <a class="btn btn-gold" href="mailto:info@festarheritage.com">▣ Schedule a Free Consultation</a>
-          <a class="cta-phone" href="tel:2035550198">☎ (203) 555-0198</a>
+          <a class="cta-phone" href="tel:6894656226">☎ (689) 465-6226</a>
         </div>
-        <div class="badge">Proudly<br />Serving<br />Connecticut</div>
+        <div class="badge">Proudly<br />Serving<br />Florida</div>
       </div>
     </section>
 
@@ -936,9 +936,10 @@
         <div>
           <h4>Contact Us</h4>
           <ul>
-            <li>123 Heritage Way, Suite 203</li>
-            <li>Waterbury, CT 06702</li>
-            <li>(203) 555-0198</li>
+            <li>Fester Heritage LLC</li>
+            <li>2000 Hillcrest Street, Suite 1305</li>
+            <li>Orlando, Florida 32803</li>
+            <li>(689) 465-6226</li>
             <li>info@festarheritage.com</li>
             <li>www.festarheritage.com</li>
           </ul>
@@ -950,5 +951,7 @@
       </div>
     </footer>
   </main>
+  <elevenlabs-convai agent-id="agent_6901kv1bkjywfb9ab2gtwpgpg9v5"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>
 </html>
