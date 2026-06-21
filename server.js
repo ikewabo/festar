@@ -59,7 +59,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`==================================================`);
-  console.log(`  Festar Health Local Test Server Started!       `);
+  console.log(`  Festar Heritage Local Test Server Started!     `);
   console.log(`  Running at: http://localhost:${PORT}/           `);
   console.log(`  Press Ctrl+C to stop the server.               `);
   console.log(`==================================================`);

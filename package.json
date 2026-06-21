@@ -1,7 +1,7 @@
 {
-  "name": "festar-health-landing-page",
+  "name": "festar-heritage-landing-page",
   "version": "1.0.0",
-  "description": "Festar Health premium home care services landing page.",
+  "description": "Festar Heritage premium home care services landing page.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,7 +9,7 @@
   "keywords": [
     "homecare",
     "landing-page",
-    "festar-health"
+    "festar-heritage"
   ],
   "author": "Antigravity",
   "license": "ISC"
