@@ -280,12 +280,19 @@ button { font-family: inherit; }
   min-height: 900px;
   color: white;
   overflow: visible;
-  background: url("assets/festarHero.gif") center/cover no-repeat;
+  background-color: var(--navy-2);
 }
 
 
 .hero::before {
-  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("assets/festarHero.gif") center/cover no-repeat;
+  z-index: 1;
 }
 
 .hero::after {
@@ -1052,8 +1059,16 @@ textarea.form-input {
   }
   
   .hero {
-    background-image: url("assets/temp/hero916-ezgif.com-video-to-gif-converter.gif");
-    background-position: left center;
+    background-image: none;
+    background-color: var(--navy-2);
+  }
+  
+  .hero::before {
+    bottom: auto;
+    height: 580px;
+    background: 
+      linear-gradient(to bottom, rgba(3, 24, 44, 0.1), var(--navy-2)),
+      url("assets/temp/hero916-ezgif.com-video-to-gif-converter.gif") center top/cover no-repeat;
   }
 
   .hero-copy {
@@ -1101,7 +1116,7 @@ textarea.form-input {
   }
   
   .service-grid { grid-template-columns: 1fr 1fr; }
-  .photo-benefits { grid-template-columns: 1fr; padding-top: 40px; }
+  .photo-benefits { grid-template-columns: 1fr; padding-top: 240px; }
   .benefit-content { grid-column: 1; padding: 40px 24px; background: rgba(3, 24, 44, 0.85); margin: 16px; }
   .benefit-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .benefit { border: 0; padding: 0; }
@@ -1137,6 +1152,11 @@ textarea.form-input {
 
   .dotted { display: none; }
   .testimonial, .cta-inner, .footer-inner { grid-template-columns: 1fr; }
+  .quote-box {
+    background: 
+      linear-gradient(rgba(3, 24, 44, 0.75), rgba(3, 24, 44, 0.75)),
+      url("https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=90") center/cover no-repeat;
+  }
   .badge { display: none; }
 }
 
