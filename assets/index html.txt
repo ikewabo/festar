@@ -726,7 +726,7 @@
         </div>
 
         <div class="nav-actions">
-          <a class="pill-phone" href="tel:6894656226">☎ (689) 465-6226</a>
+          <a class="pill-phone" href="tel:3212784165">☎ (321) 278-4165</a>
         </div>
       </nav>
 
@@ -756,16 +756,8 @@
           <article class="service-card">
             <div class="service-icon">♩</div>
             <div>
-              <h3>Skilled Nursing</h3>
-              <p>Professional nursing care at home for complex medical needs.</p>
-            </div>
-            <div class="arrow">→</div>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">♙</div>
-            <div>
-              <h3>Personal Care Assistance</h3>
-              <p>Help with daily activities like bathing, dressing, and grooming.</p>
+              <h3>Homemaking and Companion Services</h3>
+              <p>Non-medical support, household routines, errands, and companionship.</p>
             </div>
             <div class="arrow">→</div>
           </article>
@@ -782,14 +774,6 @@
             <div>
               <h3>Therapy Coordination</h3>
               <p>Coordination with physical, occupational, and speech therapists.</p>
-            </div>
-            <div class="arrow">→</div>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">♡</div>
-            <div>
-              <h3>Chronic Condition Support</h3>
-              <p>Ongoing support for diabetes, heart disease, COPD and more.</p>
             </div>
             <div class="arrow">→</div>
           </article>
@@ -889,7 +873,7 @@
         </div>
         <div class="cta-actions">
           <a class="btn btn-gold" href="mailto:info@festarheritage.com">▣ Schedule a Free Consultation</a>
-          <a class="cta-phone" href="tel:6894656226">☎ (689) 465-6226</a>
+          <a class="cta-phone" href="tel:3212784165">☎ (321) 278-4165</a>
         </div>
         <div class="badge">Proudly<br />Serving<br />Florida</div>
       </div>
@@ -924,11 +908,9 @@
         <div>
           <h4>Services</h4>
           <ul>
-            <li>Skilled Nursing</li>
-            <li>Personal Care Assistance</li>
+            <li>Homemaking and Companion Services</li>
             <li>Companion Care</li>
             <li>Therapy Coordination</li>
-            <li>Chronic Condition Support</li>
             <li>Care Management & Family Support</li>
           </ul>
         </div>
@@ -939,7 +921,7 @@
             <li>Festar Heritage LLC</li>
             <li>2000 Hillcrest Street, Suite 1305</li>
             <li>Orlando, Florida 32803</li>
-            <li>(689) 465-6226</li>
+            <li>(321) 278-4165</li>
             <li>info@festarheritage.com</li>
             <li>www.festarhealth.com</li>
           </ul>

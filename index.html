@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Festar Heritage LLC - Compassionate home care services in Florida, including skilled nursing, companion care, and personal assistance.">
+  <meta name="description" content="Festar Heritage LLC - Compassionate home care services in Florida, including homemaking and companion services, therapy coordination, and family care management.">
   <title>Festar Heritage LLC | Help Mom or Dad Stay Safe at Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,18 +28,27 @@
         <div class="nav-links">
           <a href="#home" class="active">Home</a>
           <a href="#about">About Us</a>
-          <a href="#services">Services</a>
+          <div class="nav-dropdown">
+            <a href="#services" class="nav-dropdown-toggle">Services <span class="dropdown-arrow">▾</span></a>
+            <div class="dropdown-menu">
+              <a href="homemaking-services.html">Homemaking &amp; Companion Services</a>
+              <a href="companion-care.html">Companion Care</a>
+              <a href="therapy-coordination.html">Therapy Appointment Coordination</a>
+              <a href="care-management.html">Care Management &amp; Family Support</a>
+            </div>
+          </div>
           <a href="#families">For Families</a>
+          <a href="careers.html">Careers</a>
           <a href="#resources">Resources</a>
           <a href="#contact">Contact</a>
         </div>
 
         <div class="nav-actions">
-          <a class="pill-phone" href="tel:6894656226">
+          <a class="pill-phone" href="tel:3212784165">
             <svg class="pill-phone-icon" viewBox="0 0 24 24">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
             </svg>
-            (689) 465-6226
+            (321) 278-4165
           </a>
         </div>
 
@@ -55,15 +64,22 @@
       <div class="nav-menu-mobile" id="nav-menu-mobile">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
-        <a href="#services">Services</a>
+        <a href="#services">Services Overview</a>
+        <div class="mobile-services-sub">
+          <a href="homemaking-services.html">↳ Homemaking &amp; Companion</a>
+          <a href="companion-care.html">↳ Companion Care</a>
+          <a href="therapy-coordination.html">↳ Therapy Appointment Coordination</a>
+          <a href="care-management.html">↳ Care Management &amp; Support</a>
+        </div>
         <a href="#families">For Families</a>
+        <a href="careers.html">Careers &amp; Apply</a>
         <a href="#resources">Resources</a>
         <a href="#contact">Contact</a>
-        <a class="pill-phone" href="tel:6894656226" style="margin-top: 10px; display: inline-flex; justify-content: center;">
+        <a class="pill-phone" href="tel:3212784165" style="margin-top: 10px; display: inline-flex; justify-content: center;">
           <svg class="pill-phone-icon" viewBox="0 0 24 24" style="fill: currentColor;">
             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
           </svg>
-          (689) 465-6226
+          (321) 278-4165
         </a>
       </div>
     </header>
@@ -89,6 +105,19 @@
               Watch Our Story
             </a>
           </div>
+
+          <!-- Highlighted Glass Panel: Serving Counties Cut Out -->
+          <div class="hero-serving-glass-panel">
+            <div class="glass-pin-badge">
+              <svg class="glass-pin-icon" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+              </svg>
+            </div>
+            <div class="glass-serving-text">
+              <span class="serving-prefix">Now Serving</span>
+              <span class="serving-counties">Brevard, Orange, Osceola, and Seminole Counties.</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -98,36 +127,22 @@
         <div class="mega-hint" id="explore-instruction">Move your mouse to explore services</div>
         
         <div class="service-grid">
-          <!-- Skilled Nursing -->
-          <article class="service-card" data-service="nursing">
+          <!-- Homemaking and Companion Services -->
+          <a href="homemaking-services.html" class="service-card" data-service="homemaking-companion">
             <div class="service-icon">
               <svg class="service-icon-svg" viewBox="0 0 24 24">
-                <path d="M19 10.5V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9.5M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
               </svg>
             </div>
             <div>
-              <h3>Skilled Nursing</h3>
-              <p>Professional nursing care at home for complex medical needs.</p>
+              <h3>Homemaking and Companion Services</h3>
+              <p>Non-medical support, household routines, errands, and companionship.</p>
             </div>
             <div class="arrow">→</div>
-          </article>
-
-          <!-- Personal Care -->
-          <article class="service-card" data-service="personal">
-            <div class="service-icon">
-              <svg class="service-icon-svg" viewBox="0 0 24 24">
-                <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm-7 9a7 7 0 0 1 14 0" stroke="currentColor" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Personal Care Assistance</h3>
-              <p>Help with daily activities like bathing, dressing, and grooming.</p>
-            </div>
-            <div class="arrow">→</div>
-          </article>
+          </a>
 
           <!-- Companion Care -->
-          <article class="service-card" data-service="companion">
+          <a href="companion-care.html" class="service-card" data-service="companion">
             <div class="service-icon">
               <svg class="service-icon-svg" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -138,10 +153,10 @@
               <p>Friendly companionship and support to brighten each day.</p>
             </div>
             <div class="arrow">→</div>
-          </article>
+          </a>
 
           <!-- Therapy Coordination -->
-          <article class="service-card" data-service="therapy">
+          <a href="therapy-coordination.html" class="service-card" data-service="therapy">
             <div class="service-icon">
               <svg class="service-icon-svg" viewBox="0 0 24 24">
                 <path d="M13 2v8h8M3 12h18M3 12L12 3m0 18V12M12 21l9-9" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -152,24 +167,10 @@
               <p>Coordination with physical, occupational, and speech therapists.</p>
             </div>
             <div class="arrow">→</div>
-          </article>
-
-          <!-- Chronic Condition Support -->
-          <article class="service-card" data-service="chronic">
-            <div class="service-icon">
-              <svg class="service-icon-svg" viewBox="0 0 24 24">
-                <path d="M4.5 10.5C4.5 6 12 3 12 3s7.5 3 7.5 7.5c0 5-7.5 10.5-7.5 10.5s-7.5-5.5-7.5-10.5z" stroke="currentColor" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Chronic Condition Support</h3>
-              <p>Ongoing support for diabetes, heart disease, COPD and more.</p>
-            </div>
-            <div class="arrow">→</div>
-          </article>
+          </a>
 
           <!-- Care Management -->
-          <article class="service-card" data-service="management">
+          <a href="care-management.html" class="service-card" data-service="management">
             <div class="service-icon">
               <svg class="service-icon-svg" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -181,9 +182,148 @@
               <p>Care planning, updates, and guidance for the entire family.</p>
             </div>
             <div class="arrow">→</div>
-          </article>
+          </a>
         </div>
       </section>
+    </section>
+
+    <!-- Homemaking and Companion Services Detailed Section -->
+    <section class="homemaking-section" id="homemaking-services" aria-label="Homemaking and Companion Services">
+      <div class="homemaking-container">
+        <div class="homemaking-header">
+          <div class="homemaking-tag">Comprehensive In-Home Care</div>
+          <h2 class="section-title">Homemaking and Companion Services</h2>
+          <div class="gold-line"></div>
+          <h3 class="homemaking-subtitle">How we can help</h3>
+          <p class="homemaking-intro">
+            Team members provide non-medical, hands-off support to help older adults, individuals with disabilities, or recovering patients live independently at home. These services generally focus on maintaining the household, running errands, and offering social interaction rather than hands-on personal or nursing care.
+          </p>
+          <div class="county-serving-badge">
+            <svg class="county-pin-icon" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            <span><strong>Now Serving:</strong> Brevard, Orange, Osceola, and Seminole Counties.</span>
+          </div>
+        </div>
+
+        <div class="service-pillars-grid">
+          <!-- Pillar 1: Core Homemaker Services -->
+          <article class="pillar-card">
+            <div class="pillar-icon-wrap" style="background: rgba(20, 62, 104, 0.1); color: #143e68;">
+              <svg viewBox="0 0 24 24" class="pillar-icon">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Core Homemaker Services</h3>
+            <p class="pillar-desc">These services focus on household management and daily routines to keep the living space clean, safe, and organized:</p>
+            <ul class="pillar-list">
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Light Housekeeping:</strong> Dusting, vacuuming, washing dishes, and taking out the trash.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Laundry Services:</strong> Washing, drying, folding, and ironing clothes.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Meal Preparation:</strong> Planning menus, preparing meals, and cleaning up afterward.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Grocery Shopping:</strong> Buying food and household supplies based on dietary needs.</div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: Companion Services -->
+          <article class="pillar-card">
+            <div class="pillar-icon-wrap" style="background: rgba(213, 160, 52, 0.14); color: #c78c25;">
+              <svg viewBox="0 0 24 24" class="pillar-icon">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Companion Services</h3>
+            <p class="pillar-desc">Companion care focuses on social interaction and emotional well-being to prevent isolation and ensure safety:</p>
+            <ul class="pillar-list">
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Socialization:</strong> Engaging in friendly conversation, playing board games, or sharing hobbies.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Supervision and Safety:</strong> Keeping an eye on the individual to provide a safe environment and companionship while family caregivers are away.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Routine Assistance:</strong> Providing gentle reminders for daily tasks, hydration, and appointments.</div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: Errand and Support Services -->
+          <article class="pillar-card">
+            <div class="pillar-icon-wrap" style="background: rgba(35, 139, 135, 0.12); color: #238b87;">
+              <svg viewBox="0 0 24 24" class="pillar-icon">
+                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z" fill="currentColor"/>
+                <circle cx="7.5" cy="14.5" r="1.5" fill="currentColor"/>
+                <circle cx="16.5" cy="14.5" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Errand and Support Services</h3>
+            <p class="pillar-desc">Agencies also assist with getting out of the house and managing life outside the home:</p>
+            <ul class="pillar-list">
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Transportation:</strong> Driving clients or arranging rides to medical appointments, social events, or community outings.</div>
+              </li>
+              <li>
+                <span class="bullet-check">✓</span>
+                <div><strong>Running Errands:</strong> Picking up prescriptions from the pharmacy, dry cleaning, or going to the post office.</div>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Registry & Onboarding Callout Box -->
+        <div class="registry-callout-card">
+          <div class="registry-content">
+            <div class="registry-badge">Simple &amp; Stress-Free</div>
+            <h3>Getting started with our referral registry is simple, transparent, and stress-free:</h3>
+            <p class="registry-contact-sub">Please contact us for free consultation</p>
+            <div class="registry-steps-row">
+              <div class="registry-step-item">
+                <div class="step-badge-circle">1</div>
+                <div class="step-label">Personalized Matching</div>
+              </div>
+              <div class="registry-step-arrow">→</div>
+              <div class="registry-step-item">
+                <div class="step-badge-circle">2</div>
+                <div class="step-label">Meet &amp; Connect</div>
+              </div>
+              <div class="registry-step-arrow">→</div>
+              <div class="registry-step-item">
+                <div class="step-badge-circle">3</div>
+                <div class="step-label">Ongoing Support</div>
+              </div>
+            </div>
+          </div>
+          <div class="registry-actions">
+            <button class="btn btn-gold open-modal-btn">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              Schedule a Free Consultation
+            </button>
+            <a class="pill-phone" href="tel:3212784165" style="background: rgba(6, 36, 63, 0.95); border-color: rgba(217, 164, 65, 0.4);">
+              <svg class="pill-phone-icon" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              (321) 278-4165
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why Families Choose Festar Heritage -->
@@ -253,65 +393,52 @@
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="how" id="about">
-      <div class="how-card">
-        <h2 class="section-title">How It Works</h2>
-        <div class="gold-line"></div>
-        
-        <div class="steps">
-          <!-- Step 1 -->
-          <article class="step">
-            <div class="step-num">1</div>
-            <div class="step-icon">
-              <svg class="step-icon-svg" viewBox="0 0 24 24">
-                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-              </svg>
+    <!-- Career Opportunities Section (Minimal Collapsible) -->
+    <section class="careers-preview-section" id="careers">
+      <div class="careers-preview-card">
+        <div class="careers-preview-header">
+          <div class="careers-tag">Career Opportunities</div>
+          <h2>Join Our Care Team</h2>
+          <p class="careers-preview-intro">
+            Festar Health is seeking compassionate, dependable professionals to provide non-medical homemaking and companion services throughout Brevard, Orange, Osceola and Seminole Counties.
+          </p>
+        </div>
+
+        <details class="career-details-toggle">
+          <summary class="career-summary-btn">
+            <span>View Qualifications &amp; Screening Requirements</span>
+          </summary>
+          <div class="career-expanded-content">
+            <div class="career-req-title">Applicants must:</div>
+            <ul class="career-req-list">
+              <li>Be legally authorized to work in the United States</li>
+              <li>Successfully complete an AHCA Level 2 fingerprint-based background screening</li>
+              <li>Hold a valid driver’s license, maintain current automobile insurance and have reliable transportation</li>
+              <li>Demonstrate a safe driving history when transporting clients</li>
+              <li>Communicate clearly and treat clients with dignity, patience and respect</li>
+              <li>Be dependable, professional and able to perform assigned household and companion duties</li>
+              <li>Understand that homemaker and companion positions do not include hands-on personal care, nursing or therapy</li>
+            </ul>
+
+            <div class="career-preference-note">
+              Bilingual applicants are strongly encouraged to apply. Relevant caregiving, homemaking or companion experience is preferred.
             </div>
-            <h3>Free Consultation</h3>
-            <p>Call or message us to discuss your loved one’s needs and ask any questions.</p>
-          </article>
-          
-          <div class="dotted"></div>
-          
-          <!-- Step 2 -->
-          <article class="step">
-            <div class="step-num">2</div>
-            <div class="step-icon">
-              <svg class="step-icon-svg" viewBox="0 0 24 24">
-                <path d="M19 20H5V4h14v16zm-7-2h5v-2h-5v2zm0-4h5v-2h-5v2zm0-4h5V8h-5v2zm-4 8h2v-2H8v2zm0-4h2v-2H8v2zm0-4h2V8H8v2zm4-6h-2c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-              </svg>
+
+            <div class="career-ahca-notice">
+              AHCA requires Level 2 screening before new homemakers and companions are hired. “U.S. citizenship” should not be listed as a requirement; the appropriate qualification is legal authorization to work in the United States. Driving and bilingual ability are Festar employment qualifications rather than general AHCA mandates. View <a href="https://ahca.myflorida.com/health-quality-assurance/bureau-of-health-facility-regulation/long-term-care-services-unit/homemaker-companion-services-provider/general-information.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">AHCA hiring guidance</a> and <a href="https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">AHCA background-screening guidance</a>.
             </div>
-            <h3>Personalized Care Plan</h3>
-            <p>We create a custom care plan tailored to your loved one’s needs and preferences.</p>
-          </article>
-          
-          <div class="dotted"></div>
-          
-          <!-- Step 3 -->
-          <article class="step">
-            <div class="step-num">3</div>
-            <div class="step-icon">
-              <svg class="step-icon-svg" viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9zm9 3c-1.66 0-3 1.34-3 3 0 2 3 5 3 5s3-3 3-5c0-1.66-1.34-3-3-3z"/>
-              </svg>
-            </div>
-            <h3>Care at Home</h3>
-            <p>Our caregivers provide compassionate care in the comfort of home.</p>
-          </article>
+          </div>
+        </details>
+
+        <div class="careers-preview-actions">
+          <a href="careers.html" class="btn btn-gold">
+            <svg class="btn-icon" viewBox="0 0 24 24">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+            </svg>
+            Explore Career Opportunities &amp; Apply
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial" id="story">
-      <div class="quote-box">
-        <div class="quote-mark">“</div>
-        <blockquote id="testimonial-quote">Festar Heritage has been a blessing for our family. The caregiver is kind, patient, and truly treats Mom like family. We have peace of mind knowing she’s safe and happy at home.</blockquote>
-        <cite id="testimonial-author">— The Johnson Family</cite>
-        <span id="testimonial-location">Orlando, FL</span>
-      </div>
-      <div class="family-photo" role="img" aria-label="A smiling multi-generational family together at home"></div>
     </section>
 
     <!-- Pre-Footer CTA Band -->
@@ -335,9 +462,9 @@
             </svg>
             Schedule a Free Consultation
           </button>
-          <a class="cta-phone" href="tel:6894656226">
+          <a class="cta-phone" href="tel:3212784165">
             <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: currentColor;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            (689) 465-6226
+            (321) 278-4165
           </a>
         </div>
         <div class="badge">Proudly<br />Serving<br />Florida</div>
@@ -377,9 +504,10 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#families">For Families</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Careers</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
@@ -387,12 +515,10 @@
         <div>
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Skilled Nursing</a></li>
-            <li><a href="#services">Personal Care Assistance</a></li>
-            <li><a href="#services">Companion Care</a></li>
-            <li><a href="#services">Therapy Coordination</a></li>
-            <li><a href="#services">Chronic Condition Support</a></li>
-            <li><a href="#services">Care Management & Support</a></li>
+            <li><a href="homemaking-services.html">Homemaking and Companion Services</a></li>
+            <li><a href="companion-care.html">Companion Care</a></li>
+            <li><a href="therapy-coordination.html">Therapy Appointment Coordination</a></li>
+            <li><a href="care-management.html">Care Management &amp; Support</a></li>
           </ul>
         </div>
 
@@ -402,7 +528,7 @@
             <li>Festar Heritage LLC</li>
             <li>2000 Hillcrest Street, Suite 1305</li>
             <li>Orlando, Florida 32803</li>
-            <li><a href="tel:6894656226">(689) 465-6226</a></li>
+            <li><a href="tel:3212784165">(321) 278-4165</a></li>
             <li><a href="mailto:info@festarheritage.com">info@festarheritage.com</a></li>
             <li><a href="https://www.festarhealth.com" target="_blank" rel="noopener noreferrer">www.festarhealth.com</a></li>
           </ul>
@@ -431,7 +557,7 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="form-phone">Phone Number *</label>
-          <input class="form-input" type="tel" id="form-phone" required placeholder="(689) 465-6226">
+          <input class="form-input" type="tel" id="form-phone" required placeholder="(321) 278-4165">
         </div>
         <div class="form-group">
           <label class="form-label" for="form-email">Email Address</label>
@@ -441,11 +567,9 @@
           <label class="form-label" for="form-service">Required Service</label>
           <select class="form-input" id="form-service">
             <option value="general">Not Sure / General Consultation</option>
-            <option value="nursing">Skilled Nursing</option>
-            <option value="personal">Personal Care Assistance</option>
+            <option value="homemaking-companion">Homemaking and Companion Services</option>
             <option value="companion">Companion Care</option>
             <option value="therapy">Therapy Coordination</option>
-            <option value="chronic">Chronic Condition Support</option>
             <option value="management">Care Management & Family Support</option>
           </select>
         </div>

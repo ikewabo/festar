@@ -75,16 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 150);
       }
     });
-
-    // Clicking a service card pre-selects the service in the consultation modal
-    card.addEventListener('click', () => {
-      const serviceType = card.getAttribute('data-service');
-      const selectElement = document.getElementById('form-service');
-      if (selectElement) {
-        selectElement.value = serviceType;
-      }
-      openModal();
-    });
   });
 
   // ==========================================
@@ -108,6 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
   openModalBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      const serviceType = btn.getAttribute('data-service');
+      if (serviceType) {
+        const selectElement = document.getElementById('form-service');
+        if (selectElement) {
+          selectElement.value = serviceType;
+        }
+      }
       openModal();
     });
   });
@@ -193,4 +190,28 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', highlightNav);
+  highlightNav();
+
+  // ==========================================
+  // 7. Career Application Form Submission
+  // ==========================================
+  const careerForm = document.getElementById('career-application-form');
+  const careerSuccessAlert = document.getElementById('application-success-msg');
+
+  if (careerForm) {
+    careerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const applicantName = document.getElementById('app-name').value;
+      if (careerSuccessAlert) {
+        careerSuccessAlert.style.display = 'block';
+        careerSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      const submitBtn = careerForm.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Application Submitted';
+        submitBtn.style.opacity = '0.7';
+      }
+    });
+  }
 });
