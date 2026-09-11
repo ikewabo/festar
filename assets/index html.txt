@@ -812,7 +812,7 @@
           <article class="benefit">
             <div class="bicon">▣</div>
             <h3>Flexible Scheduling</h3>
-            <p>Care when you need it — from a few hours a day to 24/7 support.</p>
+            <p>Support when you need it — daytime, evening, and scheduled visits tailored to your family’s routine.</p>
           </article>
           <article class="benefit">
             <div class="bicon">◌</div>
@@ -923,7 +923,7 @@
             <li>Orlando, Florida 32803</li>
             <li>(321) 278-4165</li>
             <li>info@festarheritage.com</li>
-            <li>www.festarhealth.com</li>
+            <li>www.festarheritage.com</li>
           </ul>
         </div>
       </div>
